@@ -59,7 +59,8 @@ public class GuardGenerator {
 	            	randomNames.add(item.getFirstChild().getFirstChild().getNodeValue());
 	            }
 			}        
-		} catch (Exception e) {
+		} 
+		catch (Exception e) {
 			randomNames.clear();
 			randomNames.addAll(getPreDefinedNames(count));
 		}
@@ -102,7 +103,8 @@ public class GuardGenerator {
 			if (count >= NAME_LIMIT_PER_RESPONSE) {
 				document = getResponseDocument(NAME_LIMIT_PER_RESPONSE);
 				count -= NAME_LIMIT_PER_RESPONSE;
-			} else {
+			} 
+			else {
 				document = getResponseDocument(count);
 				count -= count;
 			}			

@@ -5,15 +5,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Generated guards</title>
 </head>
 <body>
 	<p>Generated and saved guards: <br /> </p>
 	<table>
 		<c:forEach items="${generatedGuards}" var="guard" varStatus="i">
 			<tr>
-				<td>${i.count} &nbsp</td>
-				<td>Name: ${guard.name} &nbsp &nbsp</td>
+				<td>${i.count} &nbsp;</td>
+				<td>Name: ${guard.name} &nbsp; &nbsp;</td>
 				<td>Age: ${guard.age}</td>
 			</tr> 
 		</c:forEach>
